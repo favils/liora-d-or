@@ -1,24 +1,32 @@
 import Image from "next/image";
+import FadeInText from "./components/FadeInText";
+import Shop from "./components/Shop";
 
 export default function Home() {
   return (
-    <div className="w-full h-[500px] relative overflow-hidden">
+    <>
+      <div className="w-full h-[600px] relative overflow-hidden">
+        <div className="w-full h-full z-10 flex flex-col items-start justify-center px-6 sm:px-40 py-10 space-y-2">
+          <div className="inline-block">
+            <FadeInText text="Our" className="inline-block mr-3 text-white font-serif text-5xl" />
+            <FadeInText text="Liora " className="inline-block text-white font-serif text-9xl" />
+            <FadeInText text="d'Or " className="inline-block text-white font-serif text-9xl" />
+            <FadeInText text="Collection " className="inline-block text-white font-serif text-5xl" />
+          
+          </div>
+          <button className="scalein fill">
+            Shop Now
+          </button>
 
-      <div className="w-full h-full z-10 flex flex-col items-start justify-center px-6 sm:px-40 py-10 space-y-2">
-        <span className="text-white font-serif text-8xl">
-          Our Liora d'Or Collection
-        </span>
-        <span className="text-white text-lg font-bold">
-          Discover the Fragrance
-        </span>
+        </div>
+        <Image
+          src="/hero.jpg"
+          alt="Hero Image"
+          fill
+          className="object-cover object-center sm:object-[70%] -z-10"
+        />
       </div>
-
-      <Image
-        src="/hero.jpg"
-        alt="Hero Image"
-        fill
-        className="object-cover object-center sm:object-[70%] -z-10"
-      />
-    </div>
+      <Shop/>
+    </>
   );
 }

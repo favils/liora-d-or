@@ -14,7 +14,7 @@ export default function Home() {
             <FadeInText text="Collection " className="inline-block text-white font-serif text-5xl" />
           
           </div>
-          <button className="scalein fill">
+          <button className="shop scalein fill">
             Shop Now
           </button>
 

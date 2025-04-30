@@ -1,6 +1,8 @@
 import Image from "next/image";
 import FadeInText from "./components/FadeInText";
 import Shop from "./components/Shop";
+import VisitStores from "./components/VisitStores";
+import LovedBy from "./components/LovedBy";
 
 export default function Home() {
   return (
@@ -27,6 +29,8 @@ export default function Home() {
         />
       </div>
       <Shop/>
+      <LovedBy/>
+      <VisitStores />
     </>
   );
 }

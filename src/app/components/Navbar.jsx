@@ -4,7 +4,7 @@ import { FiSearch, FiShoppingCart } from "react-icons/fi";
 
 export default function Navbar(){
     return (
-        <div className="pl-10 pr-10 fixed top-0 left-0 w-full z-20 flex justify-between text-white font-light p-3 items-center">
+        <div className="pl-10 pr-10 fixed bg-white top-0 left-0 w-full z-20 flex justify-between font-light p-3 items-center">
             <Image
                 src="/favicon.png"
                 width={30}

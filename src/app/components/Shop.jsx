@@ -1,14 +1,13 @@
+import FadeInText from "./FadeInText";
 import ShopItem from "./Item";
 
 export default function Shop() {
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <h2 className="text-5xl font-serif font-light text-amber-600">
-          Favorite Scents
-        </h2>
+        <FadeInText text="Favorite Scents" className="text-3xl font-semibold"/>
 
-        <p className="mt-4 text-lg font-light text-gray-600 max-w-2xl mx-auto">
+        <p className="floatin mt-4 text-gray-600 max-w-2xl mx-auto">
           Uncover the luxury of rare, must-have fragrances—exclusively for those who know. Limited, coveted, and always unforgettable.
         </p>
 

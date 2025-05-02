@@ -1,8 +1,11 @@
 import Image from "next/image";
 import FadeInText from "./components/FadeInText";
 import Shop from "./components/Shop";
-import VisitStores from "./components/VisitStores";
+import Collections from "./components/Collections";
 import LovedBy from "./components/LovedBy";
+import Offer from "./components/Offer";
+import NewsletterSignup from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -30,7 +33,10 @@ export default function Home() {
       </div>
       <Shop/>
       <LovedBy/>
-      <VisitStores />
+      <Collections />
+      <Offer />
+      <NewsletterSignup />
+      <Footer />
     </>
   );
 }

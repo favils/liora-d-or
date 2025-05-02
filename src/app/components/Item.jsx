@@ -1,6 +1,6 @@
 export default function ShopItem({ name, subtitle, brand, priceRange, image, rating, reviews, soldOut }) {
   return (
-    <div className="bg-white overflow-hidden text-center max-w-xs mx-auto relative border p-4">
+    <div className="bg-white overflow-hidden text-center max-w-xs mx-auto relative p-4">
       {soldOut && (
         <div className="absolute top-2 right-2 bg-black text-white text-xs px-2 py-1 rounded">
           Sold Out

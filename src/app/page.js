@@ -6,6 +6,7 @@ import LovedBy from "./components/LovedBy";
 import Offer from "./components/Offer";
 import NewsletterSignup from "./components/Newsletter";
 import Footer from "./components/Footer";
+import FadeInWhenVisible from "./components/FadeInWhenVisible";
 
 export default function Home() {
   return (
@@ -31,12 +32,29 @@ export default function Home() {
           className="object-cover object-center sm:object-[70%] -z-10"
         />
       </div>
-      <Shop/>
-      <LovedBy/>
-      <Collections />
-      <Offer />
-      <NewsletterSignup />
-      <Footer />
+      <FadeInWhenVisible>
+        <Shop />
+      </FadeInWhenVisible>
+      
+      <FadeInWhenVisible>
+        <LovedBy />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <Collections />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <Offer />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <NewsletterSignup />
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <Footer />
+      </FadeInWhenVisible>
     </>
   );
 }

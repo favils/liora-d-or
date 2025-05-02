@@ -26,6 +26,27 @@
   top: 0;
 }
 
+.fill2:hover {
+  color: rgb(255, 255, 255);
+  scale: 1.1;
+}
+
+.fill2:before {
+  content: "";
+  position: absolute;
+  background: #000000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.13s ease-in;
+}
+
+.fill2:hover:before {
+  top: 0;
+}
+
 .shop {
   position: relative;
   display:block;
@@ -50,6 +71,30 @@
   -moz-transition:    0.1s ease-in;
   -webkit-transition: 0.1s ease-in;
 }
+
+.offer {
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 0%);
+  border: 2px #000000 solid;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.1s ease-in;
+  -o-transition:      0.1s ease-in;
+  -ms-transition:     0.1s ease-in;
+  -moz-transition:    0.1s ease-in;
+  -webkit-transition: 0.1s ease-in;
+}
+
 
 
 .scalein {

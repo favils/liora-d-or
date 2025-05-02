@@ -1,4 +1,4 @@
-export default function ShopItem({ name, subtitle, brand, priceRange, image, rating, reviews, soldOut }) {
+export default function ShopItem({ name, subtitle, priceRange, image, rating, soldOut }) {
   return (
     <div className="bg-white overflow-hidden text-center max-w-xs mx-auto relative p-4">
       {soldOut && (
@@ -14,7 +14,6 @@ export default function ShopItem({ name, subtitle, brand, priceRange, image, rat
 
       <p className="italic text-sm text-gray-400 mt-2">Samples out of stock.</p>
 
-      <p className="text-sm text-gray-700 mt-1">{brand}</p>
       <p className="text-sm text-gray-800 mt-1">{priceRange}</p>
 
       <div className="flex justify-center items-center mt-2">
@@ -29,7 +28,6 @@ export default function ShopItem({ name, subtitle, brand, priceRange, image, rat
             <path d="M12 .587l3.668 7.431 8.2 1.193-5.934 5.782 1.402 8.177L12 18.896l-7.336 3.856 1.402-8.177-5.934-5.782 8.2-1.193z" />
           </svg>
         ))}
-        <span className="ml-1 text-sm text-gray-600">{reviews} review{reviews !== 1 ? 's' : ''}</span>
       </div>
     </div>
   );

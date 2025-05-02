@@ -13,7 +13,7 @@ export default function Navbar(){
                 alt="Picture of the author"
             />
             <Link href="/" className="floatin">Home</Link>
-            <Link href="/" className="floatin">About</Link>
+            <Link href="/about" className="floatin">About</Link>
             <Link href="/" className="floatin"> Shop</Link>
             <div className="flex gap-3">
                 <FiShoppingCart className="floatin"/>

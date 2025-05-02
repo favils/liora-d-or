@@ -34,7 +34,7 @@ export default function NewsletterSignup() {
             </div>
             <button
               type="submit"
-              className="bg-black text-white py-2 px-6 text-sm font-medium hover:bg-gray-800 transition"
+              className="bg-black text-white py-2 px-6 text-sm font-medium border offer fill2"
             >
               SUBSCRIBE
             </button>
